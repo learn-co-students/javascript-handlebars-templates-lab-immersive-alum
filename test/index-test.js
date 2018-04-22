@@ -24,6 +24,7 @@ describe('Handlebars Templates Lab', function() {
       expect(recipeTemplate.innerHTML).toMatch(/<a.*displayEditForm().*>Edit Recipe<\/a>/, "Template must have an 'Edit Recipe' link that calls 'displayEditForm()'")
       expect(recipeTemplate.innerHTML).toMatch(/{{>\s?recipeDetailsPartial\s?}}/, "Template must render the recipeDetailsPartial")
     })
+
     it('has a recipe details partial template', function() {
       var recipeDetailsPartial = document.getElementById("recipe-details-partial")
       expect(recipeDetailsPartial).toExist("Must provide a template with an id of 'recipe-details-partial'")
